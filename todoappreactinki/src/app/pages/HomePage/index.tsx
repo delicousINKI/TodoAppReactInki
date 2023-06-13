@@ -1,4 +1,5 @@
 import { findByLabelText } from '@testing-library/react';
+import TodoInput from 'app/components/Todoinput';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components';
@@ -51,6 +52,7 @@ export function HomePage() {
           <Title>
             할 일
           </Title>
+          <TodoInput/>
           <TodoList>
             <TodoItem>
               <TodoCheck type="checkbox" />I'm Todo
